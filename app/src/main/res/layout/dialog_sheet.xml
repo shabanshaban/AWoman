@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_sheet"
+    android:layout_gravity="bottom"
+    android:layoutDirection="ltr"
+    android:layout_height="220dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+             <ImageView
+                 android:id="@+id/btn_cancel"
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+                 android:scaleType="centerInside"
+                 android:padding="5dp"
+                  app:srcCompat="@drawable/ic_icon_paeen"
+                 />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+               >
+                <TextView
+                    android:id="@+id/tv_sheet_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="لباس بچه"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/iran"
+                    android:textColor="@color/gray"
+                    />
+                <FrameLayout
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/divider"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_sheet_name_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="سیسمونی"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/iranb"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/lin_edit_sheet"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+
+            android:gravity="center_vertical|right"
+            android:layout_marginTop="26dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ویرایش"
+                android:textSize="14sp"
+                android:fontFamily="@font/iran"
+                android:textColor="@color/gray2"
+                />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_pan"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_delete_dialog"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="26dp"
+            android:gravity="center_vertical|right"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حذف اطلاعات"
+                android:textSize="14sp"
+                android:fontFamily="@font/iran"
+                android:textColor="@color/red_color"
+                />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerInside"
+                app:tint="@color/red_color"
+                app:srcCompat="@drawable/ic_baseline_delete_24"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

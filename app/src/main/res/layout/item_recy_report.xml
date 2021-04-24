@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/line_item_recy"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_more"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:scaleType="centerInside"
+                app:tint="@color/colorHint"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_baseline_more_vert_24"
+                />
+            <TextView
+                android:id="@+id/tv_item_price"
+                android:text="400000"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                style="@style/tv_item_recy" />
+            <TextView
+
+                android:id="@+id/tv_date_item"
+                android:text="99/2/20"
+                android:layout_weight="1"
+                style="@style/tv_item_recy" />
+            <TextView
+                android:id="@+id/tv_title_item_recy"
+                android:text="کالسکه"
+                android:layout_weight="1"
+                style="@style/tv_item_recy" />
+            <TextView
+                android:id="@+id/tv_item_group"
+                android:text="سیمسونی"
+
+                android:layout_weight="1"
+                style="@style/tv_item_recy" />
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/divider"
+            />
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="blackText">#161515</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteText">#ffffff</color>
+    <color name="darkOreng">#ec8400</color>
+    <color name="oreng">#ffa726</color>
+    <color name="colorTextMoney">#4db5ac</color>
+    <color name="gray">#a3a3a3</color>
+    <color name="gray2">#58595b</color>
+    <color name="divider">#ededed</color>
+    <color name="colorHint">#c3c3c3</color>
+    <color name="posti">#ffedd0</color>
+    <color name="backWhite">#f8f8f8</color>
+    <color name="Green">#88df8e</color>
+    <color name="Green2">#e0ef9b</color>
+    <color name="Green3">#b8ecbb</color>
+    <color name="sorati">#ff566a</color>
+    <color name="black1">#000000</color>
+    <color name="black2">#161515</color>
+    <color name="red_color">#d32f2f</color>
+
+    <array name="colorChart">
+       <item>@color/colorTextMoney</item>
+       <item>@color/oreng</item>
+       <item>@color/sorati</item>
+       <item>@color/Green</item>
+       <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+        <item>@color/colorTextMoney</item>
+        <item>@color/oreng</item>
+        <item>@color/sorati</item>
+        <item>@color/Green</item>
+        <item>@color/teal_200</item>
+
+    </array>
+</resources>

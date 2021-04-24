@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyNewGroup"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:clipToPadding="false"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_add_new_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:translationZ="1dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="bottom|left"
+        android:contentDescription="@string/todo"
+        app:backgroundTint="@color/oreng"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ic_plus"
+        app:tint="@color/whiteText"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/tv_btn_fab_addNew_group"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/add_new_group"
+        android:translationZ="1dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:gravity="center"
+        android:fontFamily="@font/iran_m"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/floatingActionButton_add_new_group"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/shape_fab_text"
+        android:textColor="@color/darkOreng"
+        android:layout_gravity="bottom|left"
+
+        />
+</RelativeLayout>

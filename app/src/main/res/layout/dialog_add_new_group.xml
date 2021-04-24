@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:layoutDirection="rtl"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_above="@id/line_btn">
+                <TextView
+                    android:id="@+id/tv_title_dialog_editeGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="گروه جدید"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="16dp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/iranb"
+                    android:gravity="right"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_title_Edite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="عنوان گروه"
+                    android:textColor="@color/gray2"
+                    android:textSize="12sp"
+                    android:layout_marginTop="16dp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/iran_m"
+                    android:gravity="right"
+
+                    />
+                <EditText
+                    android:id="@+id/ed_name_newGroup_dialog_add_newGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="45dp"
+                    android:textColor="@color/blackText"
+                    android:layout_marginTop="8dp"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:imeOptions="actionDone"
+                    android:fontFamily="@font/iran"
+                    android:paddingRight="12dp"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="12dp"
+                    android:textColorHint="@color/colorHint"
+                    android:hint="@string/sample_group"
+                    android:background="@drawable/shape_stroke_editext_dialog"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line_btn"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_stroke_editext_dialog"
+                android:layout_height="56dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_create_group_dialog_addNewGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:text="@string/create_grop"
+                    android:textColor="@color/colorTextMoney"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/iran_m"
+                    />
+                <FrameLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"
+                    />
+                <com.google.android.material.button.MaterialButton
+
+                    android:id="@+id/btn_cancel_dialog_addNewGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:text="@string/cancel"
+                    android:textColor="@color/colorHint"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/iran_m"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

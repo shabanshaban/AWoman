@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroolview2"
+            android:layout_width="match_parent"
+            android:scrollY="0dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/toolbar"/>
+
+                    <TextView
+                        android:id="@+id/tv_title_money_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="start"
+                        android:fontFamily="@font/iran"
+                        android:includeFontPadding="false"
+                        android:text="@string/sum_all_money"
+                        android:textColor="@color/black2"
+                        android:textSize="14sp"
+                        android:layout_marginTop="24dp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/tv_price_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="start"
+                        android:fontFamily="@font/iranb"
+                        android:includeFontPadding="false"
+                        android:text="0 تومان"
+                        android:textColor="@color/colorTextMoney"
+                        android:textSize="20sp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+
+                        android:layout_marginTop="4dp"
+                        />
+                    <TextView
+                        android:id="@+id/btn_manage_group"
+                        android:layout_width="156dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/iran_m"
+                        android:background="@drawable/ic_button_copy_5"
+                        android:gravity="center"
+                        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                        android:includeFontPadding="false"
+                        android:text="مدیریت گروه‌های هزینه"
+                        android:textColor="@color/whiteText"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        />
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tablsyout"
+                        style="@style/defaultTabLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipChildren="false"
+
+                        android:clipToPadding="false"
+                        android:background="@color/white"
+                        android:layout_marginTop="35dp"
+                        android:layoutDirection="rtl"
+
+
+
+                        />
+                    <FrameLayout
+                        android:id="@+id/frameLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray"
+
+                        app:layout_constraintTop_toBottomOf="@+id/tablsyout"
+                        tools:ignore="UnusedAttribute" />
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:translationZ="1dp"
+                        android:orientation="horizontal"
+                        android:paddingEnd="16dp"
+
+                        android:paddingStart="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tablsyout"
+                        tools:ignore="UnusedAttribute">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/iran"
+                            android:gravity="right"
+                            android:text="مبلغ"
+                            android:textColor="@color/colorTextMoney"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/iran"
+                            android:gravity="right"
+                            android:text="تاریخ"
+                            android:textColor="@color/colorTextMoney"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/iran"
+                            android:gravity="right"
+                            android:text="عنوان"
+                            android:textColor="@color/colorTextMoney"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/iran"
+                            android:gravity="right"
+                            android:text="گروه"
+                            android:textColor="@color/colorTextMoney"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/frameLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F8F5F5"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+                    <!---->
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPager2"
+                        android:layout_width="match_parent"
+                        android:clipToPadding="false"
+                        android:layout_height="wrap_content"
+
+                        android:layoutDirection="rtl"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:translationZ="1dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="bottom|left"
+        android:contentDescription="@string/todo"
+        app:backgroundTint="@color/oreng"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_plus"
+        app:tint="@color/whiteText" />
+
+    <TextView
+        android:id="@+id/tv_btn_fab"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:text="@string/new_price"
+        android:translationZ="1dp"
+        android:gravity="center"
+        android:fontFamily="@font/iran_m"
+        android:textSize="12sp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/shape_fab_text"
+        android:textColor="@color/darkOreng"
+       android:layout_gravity="bottom|left"
+
+          />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

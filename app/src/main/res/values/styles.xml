@@ -1,0 +1,79 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="defaultTabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:gravity">right</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabTextColor">@color/gray</item>
+        <item name="tabIndicatorColor">@color/black2</item>
+        <item name="android:textSize">20sp</item>
+        <item name="tabIndicatorHeight">1dp</item>
+        <item name="tabMode">auto</item>
+        <item name="fontFamily">@font/iran</item>
+        <item name="tabGravity">fill</item>
+
+    </style>
+    <style name="defaultTabLayout2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:gravity">right</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabTextColor">@color/gray</item>
+        <item name="tabIndicatorColor">@color/black2</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabMode">fixed</item>
+        <item name="fontFamily">@font/iran</item>
+        <item name="tabGravity">fill</item>
+
+    </style>
+    <style name="textSize_tab" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/iran</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="Theme.MaterialComponents.Dialog"   >
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme_Dialog_sheet" parent="Theme.MaterialComponents.Dialog"   >
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+    <style name="rad_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">@color/gray2</item>
+        <item name="android:fontFamily">@font/iran</item>
+    </style>
+
+    <style name="tv_item_recy">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">14sp</item>
+
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center|center_vertical|center_horizontal</item>
+        <item name="android:fontFamily">@font/iran</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>
